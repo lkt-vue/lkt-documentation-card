@@ -1,0 +1,142 @@
+.lkt-documentation-card-grid {
+  grid-gap: 15px;
+  align-items: stretch;
+  display: grid;
+  padding: var(--gap);
+  grid-template-columns: repeat(auto-fill,minmax(min(100%,290px),1fr));
+}
+
+.lkt-documentation-card {
+  display: inline-flex;
+  gap: var(--gap);
+  align-items: start;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 9px;
+  padding: 7px;
+  border: 1px solid #ffffff;
+  transition: all linear .1s;
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  justify-content: space-between;
+}
+
+.lkt-documentation-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.lkt-documentation-card-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--gap);
+  padding-top: var(--gap);
+}
+
+.lkt-documentation-card-title {
+  font-weight: 400;
+  line-height: 1.425;
+  margin-top: -7px;
+}
+
+.lkt-documentation-card-intro {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+.lkt-documentation-card-read-more {
+  width: 100%;
+  text-align: center;
+}
+
+.lkt-documentation-card-ribbon {
+  font-size: 25px;
+  padding: calc(2 * var(--gap));
+  border: 2px solid var(--primary-color);
+  background: var(--primary-contrast);
+  width: 50px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow:0px 0px 27px 1px rgba(236,168,65,0.9);
+  -moz-box-shadow: 0px 0px 27px 1px rgba(236,168,65,0.9);
+  box-shadow: 0px 0px 27px 1px rgba(236,168,65,0.9);
+  margin-bottom: var(--gap);
+  transition: 150ms;
+}
+.lkt-documentation-card:hover .lkt-documentation-card-ribbon {
+  -webkit-box-shadow:0px 0px 27px 5px rgba(236,168,65,0.9);
+  -moz-box-shadow: 0px 0px 27px 5px rgba(236,168,65,0.9);
+  box-shadow: 0px 0px 27px 5px rgba(236,168,65,0.9);
+}
+.lkt-documentation-card-icon {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.lkt-documentation-card-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.lkt-documentation-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all linear 150ms;
+  border-radius: 4px;
+}
+
+.lkt-icon-npm {
+  width: 3em;
+}
+
+.lkt-icon-npm:before {
+  width: 3em;
+}
+
+.npm-link {
+  color: #cc3534 !important;
+  border: 1px solid #cc3534;
+  background: transparent;
+}
+
+.npm-link:hover {
+  color: #ffffff !important;
+  border: 1px solid #cc3534;
+  background: #cc3534;
+}
+
+.github-link {
+  color: #1f2328 !important;
+  border: 1px solid #1f2328;
+  background: transparent;
+}
+
+.github-link:hover {
+  color: #ffffff !important;
+  border: 1px solid #1f2328;
+  background: #1f2328;
+}
+
+.packagist-link {
+  color: #f28d1a !important;
+  border: 1px solid #f28d1a;
+  background: #ffffff;
+}
+
+.packagist-link:hover {
+  color: #ffffff !important;
+  border: 1px solid #f28d1a;
+  background: #f28d1a;
+}

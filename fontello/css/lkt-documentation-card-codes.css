@@ -1,0 +1,11 @@
+
+.lkt-icon-npm:before { content: '\e800'; } /* '' */
+.lkt-icon-packagist:before { content: '\e801'; } /* '' */
+.lkt-icon-github-circled:before { content: '\f09b'; } /* '' */
+.lkt-icon-html5:before { content: '\f13b'; } /* '' */
+.lkt-icon-css3:before { content: '\f13c'; } /* '' */
+.lkt-icon-bitbucket:before { content: '\f171'; } /* '' */
+.lkt-icon-git-squared:before { content: '\f1d2'; } /* '' */
+.lkt-icon-git:before { content: '\f1d3'; } /* '' */
+.lkt-icon-gitlab:before { content: '\f296'; } /* '' */
+.lkt-icon-linkedin-squared:before { content: '\f30c'; } /* '' */
